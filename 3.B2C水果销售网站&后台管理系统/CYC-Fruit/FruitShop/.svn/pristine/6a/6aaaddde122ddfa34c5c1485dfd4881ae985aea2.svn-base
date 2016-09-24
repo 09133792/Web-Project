@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 指定Spring配置文件的Schema信息 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	
+	<!-- 定义数据源Bean，使用C3P0数据源实现 -->
+	<!-- 并设置连接数据库的驱动、URL、用户名、密码，
+	连接池最大连接数、最小连接数、初始连接数等参数  -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close"
+		p:driverClass="com.mysql.jdbc.Driver"
+		p:jdbcUrl="jdbc:mysql://localhost/my"
+		p:user="root"
+		p:password="123456"
+		p:maxPoolSize="40"
+		p:minPoolSize="2"
+		p:initialPoolSize="2"
+		p:maxIdleTime="30"/>
+
+	<!-- 定义Hibernate的SessionFactory，并依赖注入数据源，注入上面定义的dataSource -->
+	<bean id="sessionFactory" 
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
+		p:dataSource-ref="dataSource">
+		<!-- annotatedClasses用来列出全部持久化类 -->
+		<property name="annotatedClasses">
+			<list>
+				<!-- 以下用来列出所有的PO类-->
+				<value>domain.Book</value>
+				<value>domain.User</value>
+			</list>
+		</property>
+		<!-- 定义Hibernate SessionFactory的属性 -->
+		<property name="hibernateProperties">
+			<props>
+				<!-- 指定Hibernate的连接方言 -->
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+				<!--是否根据Hiberante映射创建数据表 -->
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>	
+				<prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>			
+			</props>
+		</property>
+		
+		
+	</bean>
+	
+	
+<!-- 配置DAO组件的模板 -->
+
+	<bean id="bookDao" class="dao.impl.BookDaoHibernate4"
+		p:sessionFactory-ref="sessionFactory"/>
+		
+	<bean id="userDao" class="dao.impl.UserDaoHibernate4"
+		p:sessionFactory-ref="sessionFactory"/>
+
+
+
+</beans>

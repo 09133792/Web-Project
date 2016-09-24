@@ -1,0 +1,26 @@
+网站组成：
+1.网站界面
+    前台界面：bootstrap 框架
+        具体页面：index.html(主页)
+                  login.html(登录)
+                  register.html(注册)
+                  change-password.html(改变密码)
+                  find-password.html(找回密码)
+                  collect.html(我的收藏)
+                  order.html(我的订单)
+                  cart.html(我的购物车)
+                  details.html(商品详情页)
+    后台界面：jquery easyUI
+2.网站功能
+    前台功能：用户登录注册 修改密码 找回密码 登录记住密码 用户在线统计
+              商品多图片展示 
+              添加商品到购物车
+              修改购物车
+              商品收藏
+              订单状态通知
+              订单查询
+              订单图文评论
+              订单打分（物流、质量、服务）
+    后台功能：树形商品类别管理 商品添加删除修改  库存、销售统计
+3.数据库
+    数据库设计：mysql

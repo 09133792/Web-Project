@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>评估</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/echarts.css">
+	<script src="js/echarts.js"></script>
+</head>
+<body>
+	<!-- 导航菜单 start navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">灾害预防评估</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right text-uppercase">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="estimate.html">评估</a></li>
+					<li><a href="history.html" >历史</a></li>
+					<li><a href="setup.html" >设置</a></li>
+					<li><a href="login.html" >登录</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- end navigation -->
+	
+	<!--  第一页 section1 start write-->
+	<section id="write">
+		<div class="container">
+			<div class="row clearfix">
+				<h3 class="text-center" style="margin: 100px auto;">第一步：请填入相关评估信息</h3>
+				<form role="form" class="form-horizontal">
+					<div class="form-group">
+						<h5 class="col-md-3">评估名称：</h5>
+						<div class="col-md-9">
+							<input type="email" class="form-control" />
+						</div>	
+					</div>
+					<div class="form-group">
+						<h5 class="col-md-3">评估人员：</h5>
+						<div class="col-md-3">
+							<input type="email" class="form-control" />
+						</div>
+						<h5 class="col-md-3">评估部门：</h5>
+						<div class="col-md-3">
+							<input type="email" class="form-control" />
+						</div>
+
+					</div>
+					<div class="form-group">
+						<h5 class="col-md-3">评估对象：</h5>
+						<div class="col-md-3">
+							<select class="form-control">
+								<option>徐州市</option>
+								<option>南京市</option>
+								<option>江阴市</option>
+							</select>
+						</div>
+						<h5 class="col-sm-3">评估类型：</h5>
+						<div class="col-sm-3">
+							<select class="form-control"> 
+								<option>专项评估</option>
+								<option>全面评估</option> 
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<h5 class="col-sm-3">灾害类型：</h5>
+						<div class="col-sm-3">
+							<select class="form-control"> 
+								<option>工业生产</option>
+								<option>地震</option>
+								<option>自然灾害</option>
+								<option>交通</option> 
+							</select>
+						</div>
+						<h5 class="col-sm-3">评估周期：</h5>
+						<div class="col-sm-3">
+							<select class="form-control"> 
+								<option>临时评估</option>
+								<option>月度评估</option>
+								<option>年度评估</option>
+							</select>
+						</div>
+					</div>
+				</form>
+
+			</div>
+			<div class="row">
+				<div class="col-md-5"></div>
+				<div class="col-md-2">
+					<div class="collapse navbar-collapse templatemo-nav" role="navigation">
+						<button id="btn1" class="btn btn-info" style="width: 106%;margin:40px auto;">下一步</button>
+					</div>
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end write -->
+
+	<!-- 第二页 section2 start indicate -->
+	<section id="indicate">
+		<div class="container">
+			<div class="row clearfix">
+				<h3 class="text-center" style="margin: 60px auto;">第二步：请为相关评估指标打分</h3>
+				<div class="col-md-12 column">
+					<table class="table table-bordered table-hover text-center">
+						<thead>
+							<tr class="info">
+								<th>
+									一级指标
+								</th>
+								<th>
+									功能层
+								</th>
+								<th>
+									二级指标
+								</th>
+								<th>
+									打分
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="18">灾害监测预警能力</td>
+								<td rowspan="6">2</td>
+								<td>3</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td rowspan="6">2</td>
+								<td>3</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td rowspan="6">2</td>
+								<td>3</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>	
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5"></div>
+				<div class="col-md-2">
+					<div class="collapse navbar-collapse templatemo-nav" role="navigation">
+						<button id="btn2" class="btn btn-info" style="width: 106%;margin:40px auto;">生成评估结果</button>
+					</div>
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+		</div>
+	</section>
+	<!-- end indicate -->
+
+	<!-- 第三页 section3 start result -->
+	<section id="result">
+		<div class="container">
+			<div class="row clearfix">
+				<h3 class="text-center" style="margin: 60px auto;">第三步：评估结果与建议</h3>
+				<div class="col-md-12 column">
+					<div class="jumbotron">
+						<p>
+							折线图与多雷达图分析
+						</p>
+						
+					</div>
+				</div>
+				<div class="col-md-12 column">
+					<div>
+						<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+						<div id="zexian" style="width: 800px; height: 500px;margin: auto;"></div>
+
+						<script type="text/javascript">
+
+			        // 基于准备好的dom，初始化echarts实例
+			        var myChart = echarts.init(document.getElementById('zexian'));
+
+			        // 指定图表的配置项和数据
+			        var option = {
+			        	title: {
+			        		text: ''
+			        	},
+			        	tooltip: {
+			        		trigger: 'axis'
+			        	},
+			        	legend: {
+			        		data:['灾害监测预警能力','灾害准备减缓能力','灾害应急反应能力','组织协调能力','环境支撑能力','物资保障能力',]
+			        	},
+			        	grid: {
+			        		left: '3%',
+			        		right: '4%',
+			        		bottom: '3%',
+			        		containLabel: true
+			        	},
+			        	toolbox: {
+			        		feature: {
+			        			saveAsImage: {}
+			        		}
+			        	},
+			        	xAxis: {
+			        		type: 'category',
+			        		boundaryGap: false,
+			        		data: ['2010','2012','2013','2014','2015','2016','2017E']
+			        	},
+			        	yAxis: {
+			        		type: 'value'
+			        	},
+			        	series: [
+			        	{
+			        		name:'灾害监测预警能力',
+			        		type:'line',
+			        		stack: '总量',
+			        		data:[120, 132, 101, 134, 90, 230, 210]
+			        	},
+			        	{
+			        		name:'灾害准备减缓能力',
+			        		type:'line',
+			        		stack: '总量',
+			        		data:[220, 182, 191, 234, 290, 330, 310]
+			        	},
+			        	{
+			        		name:'灾害应急反应能力',
+			        		type:'line',
+			        		stack: '总量',
+			        		data:[150, 232, 201, 154, 190, 330, 410]
+			        	},
+			        	{
+			        		name:'组织协调能力',
+			        		type:'line',
+			        		stack: '总量',
+			        		data:[320, 332, 301, 334, 390, 330, 320]
+			        	},
+			        	{
+			        		name:'环境支撑能力',
+			        		type:'line',
+			        		stack: '总量',
+			        		data:[720, 832, 801, 834, 1190, 1230, 1320]
+			        	},
+			        	{
+			        		name:'物资保障能力',
+			        		type:'line',
+			        		stack: '总量',
+			        		data:[820, 932, 901, 934, 1290, 1330, 1320]
+			        	},
+			        	]
+			        };
+
+
+			        // 使用刚指定的配置项和数据显示图表。
+			        myChart.setOption(option);
+
+			    </script>
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr>
+	<div class="row">
+		<div class="col-md-12 column">
+			<div>
+				<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+				<div id="leida" style="width: 1100px; height: 800px;margin: auto;"></div>
+
+				<script type="text/javascript">
+
+					        // 基于准备好的dom，初始化echarts实例
+					        var myChart = echarts.init(document.getElementById('leida'));
+
+					        // 指定图表的配置项和数据
+					        var option = {
+					        	title: {
+					        		text: ''
+					        	},
+					        	tooltip: {
+					        		trigger: 'axis'
+					        	},
+					        	legend: {
+					        		x: 'center',
+					        		data:['一级指标','功能层','功能层','灾情评估','恢复处理情况']
+					        	},
+					        	radar: [
+					        	{
+					        		indicator: [
+					        		{text: '监测预警能力', max: 100},
+					        		{text: '准备减缓能力', max: 100},
+					        		{text: '应急反应能力', max: 100},
+					        		{text: '恢复重建能力', max: 100}
+					        		],
+					        		center: ['25%','40%'],
+					        		radius: 80
+					        	},
+					        	{
+					        		indicator: [
+					        		{text: '组织协调能力', max: 100},
+					        		{text: '资源保障能力', max: 100},
+					        		{text: '环境支撑能力', max: 100},
+
+					        		],
+					        		radius: 80,
+					        		center: ['50%','60%'],
+					        	},
+					        	{
+					        		indicator: (function (){
+					        			var res = [];
+					        			for (var i = 1; i <= 12; i++) {
+					        				res.push({text:i+'月',max:100});
+					        			}
+					        			return res;
+					        		})(),
+					        		center: ['75%','40%'],
+					        		radius: 80
+					        	}
+					        	],
+					        	series: [
+					        	{
+					        		type: 'radar',
+					        		tooltip: {
+					        			trigger: 'item'
+					        		},
+					        		itemStyle: {normal: {areaStyle: {type: 'default'}}},
+					        		data: [
+					        		{
+					        			value: [60,73,85,40],
+					        			name: '一级指标'
+					        		}
+					        		]
+					        	},
+					        	{
+					        		type: 'radar',
+					        		radarIndex: 1,
+					        		data: [
+
+					        		{
+					        			value: [45, 80, 95, 90, 93],
+					        			name: '功能层'
+					        		}
+					        		]
+					        	},
+					        	{
+					        		type: 'radar',
+					        		radarIndex: 2,
+					        		itemStyle: {normal: {areaStyle: {type: 'default'}}},
+					        		data: [
+					        		{
+					        			name: '灾情评估',
+					        			value: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 75.6, 82.2, 48.7, 18.8, 6.0, 2.3],
+					        		},
+					        		{
+					        			name:'恢复处理情况',
+					        			value:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 35.6, 62.2, 32.6, 20.0, 6.4, 3.3]
+					        		}
+					        		]
+					        	}
+					        	]
+					        };
+
+
+					        // 使用刚指定的配置项和数据显示图表。
+					        myChart.setOption(option);
+
+					    </script>
+					</div>
+					<br><br>
+					<hr>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<!-- end result -->
+
+	<!-- 页脚 start footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<p>Copyright © 2016 评估系统</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/rolling.js"></script>
+</body>
+</html>
